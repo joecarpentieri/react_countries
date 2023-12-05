@@ -19,12 +19,9 @@ const CountryContainer = () => {
         console.log(countries)
     }, [])
 
-    const handleChange = (event, country) => { 
-        let isChecked = event.target.checked
+    const handleChange = (country) => { 
         const newList = [...countriesVisited, country]
         setCountriesVisited(newList)
-        countries.splice(country)
-        
      }
 
     

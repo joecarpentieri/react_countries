@@ -3,10 +3,8 @@ import CountryContainer from "../containers/CountryContainer";
 
 const Country = ({country, handleChange}) => {
 
-    const onChange = ((event) => {
-        handleChange(event)
-        // event.target.splice()
-        // .push()
+    const onChange = (() => {
+        handleChange(country)
     })
 
     return ( 
